@@ -1,0 +1,154 @@
+﻿/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: lightblue;
+    color: #ffffff;
+}
+
+/* Main Container Layout */
+.container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Left Panel */
+.left-panel {
+    width: 70%;
+    background-color: #312923;
+    padding: 40px 60px;
+    overflow-y: auto;
+}
+
+/* Right Panel */
+.right-panel {
+    width: 30%;
+    background: url('../images/pet-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 40px;
+}
+
+/* Text Styling */
+h1 {
+    font-size: 3em;
+    color: #F9B317;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2em;
+    color: #ff9900;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ffcc00;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+/* List Styling */
+ul, ol {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+    ul li, ol li {
+        margin-bottom: 10px;
+        font-size: 1.1em;
+        padding-left: 20px;
+        position: relative;
+    }
+
+        ul li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #ffcc00;
+        }
+
+ul {
+    list-style-type: none;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #F9B317;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+    .button:hover {
+        background-color: #C9900F;
+    }
+
+/* Image Styling */
+#rigbyimg {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #312923;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+    .menu li {
+        margin: 0 15px;
+    }
+
+    .menu a {
+        color: #ffffff;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+        .menu a:hover {
+            background-color: #F9B317;
+            transform: scale(1.05);
+        }
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #ffcc00;
+    padding: 10px 0;
+}
